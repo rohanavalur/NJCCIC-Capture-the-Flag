@@ -1,0 +1,69 @@
+body {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff8565;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+header .container {
+  width: 95%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Challenges */
+.challenges {
+  text-align: center;
+  height: 100%;
+}
+
+.challenges .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.challenges .btn {
+  background: #00008B;
+  color: white;
+  white-space: normal;
+  display: inline-block;
+  padding: 20px 25px;
+
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.challenges .btn:hover {
+  background: #0056b3;
+}
