@@ -1,0 +1,31 @@
+<!--
+In this template, fill in the title (inside <title> tag) and then the challenge, challengeTitle, description, and flag
+(parameters in the loadChallenge call below).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NJCCIC Team 6 CTF - Challenge 2</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../challenge.js" defer></script>
+</head>
+<body>
+  <script>
+    // Load template and populate challenge
+    fetch('../challenge-template.html')
+      .then(res => res.text())
+      .then(html => {
+        document.body.innerHTML = html; // inject template content
+        loadChallenge({
+          challenge: "NJCCIC Team 6 CTF - Challenge 2",
+          challengeTitle: "SQL Injection",
+          description: "The flag is <b>ctf{hello}</b>",
+          flag: "ctf{hello}"
+        });
+      })
+      .catch(err => console.error("Failed to load template:", err));
+  </script>
+</body>
+</html>
